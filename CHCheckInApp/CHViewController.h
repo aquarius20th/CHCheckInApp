@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHLoginView.h"
+@interface CHViewController : UIViewController <CHLoginViewDelegate>
 
-@interface CHViewController : UIViewController
 
 @end

@@ -22,6 +22,8 @@
 		056D7C021961ADD800061527 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056D7BE11961ADD800061527 /* UIKit.framework */; };
 		056D7C0A1961ADD800061527 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 056D7C081961ADD800061527 /* InfoPlist.strings */; };
 		056D7C0C1961ADD800061527 /* CHCheckInAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D7C0B1961ADD800061527 /* CHCheckInAppTests.m */; };
+		05E0B8771962F2E30076CDC6 /* CHLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E0B8751962F2E30076CDC6 /* CHLoginView.m */; };
+		05E0B8781962F2E30076CDC6 /* CHLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E0B8761962F2E30076CDC6 /* CHLoginView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		056D7C071961ADD800061527 /* CHCheckInAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CHCheckInAppTests-Info.plist"; sourceTree = "<group>"; };
 		056D7C091961ADD800061527 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		056D7C0B1961ADD800061527 /* CHCheckInAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCheckInAppTests.m; sourceTree = "<group>"; };
+		05E0B8741962F2E30076CDC6 /* CHLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLoginView.h; sourceTree = "<group>"; };
+		05E0B8751962F2E30076CDC6 /* CHLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLoginView.m; sourceTree = "<group>"; };
+		05E0B8761962F2E30076CDC6 /* CHLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHLoginView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,9 @@
 				056D7BF61961ADD800061527 /* CHViewController.m */,
 				056D7BF81961ADD800061527 /* Images.xcassets */,
 				056D7BE41961ADD800061527 /* Supporting Files */,
+				05E0B8741962F2E30076CDC6 /* CHLoginView.h */,
+				05E0B8751962F2E30076CDC6 /* CHLoginView.m */,
+				05E0B8761962F2E30076CDC6 /* CHLoginView.xib */,
 			);
 			path = CHCheckInApp;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 			files = (
 				056D7BF41961ADD800061527 /* Main_iPad.storyboard in Resources */,
 				056D7BF91961ADD800061527 /* Images.xcassets in Resources */,
+				05E0B8781962F2E30076CDC6 /* CHLoginView.xib in Resources */,
 				056D7BF11961ADD800061527 /* Main_iPhone.storyboard in Resources */,
 				056D7BE81961ADD800061527 /* InfoPlist.strings in Resources */,
 			);
@@ -257,6 +266,7 @@
 				056D7BEA1961ADD800061527 /* main.m in Sources */,
 				056D7BEE1961ADD800061527 /* CHAppDelegate.m in Sources */,
 				056D7BF71961ADD800061527 /* CHViewController.m in Sources */,
+				05E0B8771962F2E30076CDC6 /* CHLoginView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +405,7 @@
 				GCC_PREFIX_HEADER = "CHCheckInApp/CHCheckInApp-Prefix.pch";
 				INFOPLIST_FILE = "CHCheckInApp/CHCheckInApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,6 +419,7 @@
 				GCC_PREFIX_HEADER = "CHCheckInApp/CHCheckInApp-Prefix.pch";
 				INFOPLIST_FILE = "CHCheckInApp/CHCheckInApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +483,7 @@
 				056D7C111961ADD800061527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		056D7C121961ADD800061527 /* Build configuration list for PBXNativeTarget "CHCheckInAppTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +492,7 @@
 				056D7C141961ADD800061527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHLoginView.h"
 
-@interface CHAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CHAppDelegate : UIResponder <UIApplicationDelegate,CHLoginViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) CHLoginView *loginview;
 @end
